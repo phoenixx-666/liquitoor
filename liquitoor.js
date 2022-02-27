@@ -32,7 +32,6 @@ function showPlayers() {
     $textarea.text(teams.map(team => {
         let teamCard = '{{TeamCard\n';
         teamCard += '|team=' + team + '\n';
-        teamCard += '|image=\n';
         teamPlayers[team].forEach((player, ix) => {
             let i = ix + 1;
             teamCard += '|p' + i + '=' + player + ' ';
